@@ -4,9 +4,9 @@
     "license": "MIT",
     "require": {
         "php": ">=7.1",
-        "spryker-middleware/process": "dev-beta/middleware-process",
-        "spryker/oms": "*",
-        "spryker/sales": "*"
+        "spryker-middleware/process": "dev-dev",
+        "spryker/oms": "^8.0.0",
+        "spryker/sales": "^8.0.0"
     },
     "autoload": {
         "psr-4": {
