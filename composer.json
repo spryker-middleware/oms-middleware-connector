@@ -1,0 +1,23 @@
+{
+    "name": "spryker-middleware/oms-middleware-connector",
+    "description": "OmsMiddlewareConnector module",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1",
+        "spryker-middleware/process": "dev-beta/middleware-process",
+        "spryker/oms": "*",
+        "spryker/sales": "*"
+    },
+    "autoload": {
+        "psr-4": {
+          "SprykerMiddleware\\": "src/SprykerMiddleware/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "process-timeout": 600
+    }
+}
