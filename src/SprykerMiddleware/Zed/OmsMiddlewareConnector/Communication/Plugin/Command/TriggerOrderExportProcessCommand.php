@@ -7,6 +7,8 @@
 
 namespace SprykerMiddleware\Zed\OmsMiddlewareConnector\Communication\Plugin\Command;
 
+use Generated\Shared\Transfer\IteratorConfigTransfer;
+use Generated\Shared\Transfer\LoggerConfigTransfer;
 use Generated\Shared\Transfer\ProcessSettingsTransfer;
 use Orm\Zed\Sales\Persistence\SpySalesOrder;
 use Spryker\Zed\Oms\Business\Util\ReadOnlyArrayObject;
@@ -44,7 +46,10 @@ class TriggerOrderExportProcessCommand extends AbstractCommand implements Comman
     protected function getProcessSettingsTransfer(SpySalesOrder $orderEntity): ProcessSettingsTransfer
     {
         $processSettingsTransfer = new ProcessSettingsTransfer();
-        $processSettingsTransfer->setInputPath($orderEntity->getOrderReference());
+        $processSettingsTransfer->setInputPath($orderEntity->getIdSalesOrder());
+        $processSettingsTransfer->setOutputPath("2_order.json");
+        $processSettingsTransfer->setIteratorConfig(new IteratorConfigTransfer());
+        $processSettingsTransfer->setLoggerConfig(new LoggerConfigTransfer());
         $processSettingsTransfer->setName($this->getFactory()->getConfig()->getOrderExportProcessName());
 
         return $processSettingsTransfer;
