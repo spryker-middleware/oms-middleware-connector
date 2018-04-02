@@ -60,11 +60,9 @@ class OrderReadStream implements ReadStreamInterface
     }
 
     /**
-     * @param string $mode
-     *
      * @return bool
      */
-    public function open(string $mode): bool
+    public function open(): bool
     {
         $this->idSalesOrderList = explode(' ', $this->orderIdsString);
         $this->position = 0;
