@@ -17,6 +17,8 @@ use SprykerMiddleware\Zed\Process\Dependency\Plugin\Stream\InputStreamPluginInte
  */
 class OrderReadStreamPlugin extends AbstractPlugin implements InputStreamPluginInterface
 {
+    protected const PLUGIN_NAME = 'OrderReadStreamPlugin';
+
     /**
      * @param string $path
      *
@@ -27,5 +29,13 @@ class OrderReadStreamPlugin extends AbstractPlugin implements InputStreamPluginI
         return $this->getFactory()
             ->createStreamFactory()
             ->createOrderReadStream($path);
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return static::PLUGIN_NAME;
     }
 }
