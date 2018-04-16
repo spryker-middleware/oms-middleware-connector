@@ -45,18 +45,10 @@ class OrderReadStream implements ReadStreamInterface
     /**
      * @return mixed
      */
-    public function get()
+    public function read()
     {
         return $this->orderReader
             ->readOrder($this->idSalesOrderList[$this->position++]);
-    }
-
-    /**
-     * @return mixed
-     */
-    public function read()
-    {
-        return $this->get();
     }
 
     /**

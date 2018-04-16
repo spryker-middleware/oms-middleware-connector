@@ -47,7 +47,7 @@ class TriggerOrderExportProcessCommand extends AbstractCommand implements Comman
     {
         $processSettingsTransfer = new ProcessSettingsTransfer();
         $processSettingsTransfer->setInputPath($orderEntity->getIdSalesOrder());
-        $processSettingsTransfer->setOutputPath("2_order.json");
+        $processSettingsTransfer->setOutputPath(null);
         $processSettingsTransfer->setIteratorConfig(new IteratorConfigTransfer());
         $processSettingsTransfer->setLoggerConfig(new LoggerConfigTransfer());
         $processSettingsTransfer->setName($this->getFactory()->getConfig()->getOrderExportProcessName());
