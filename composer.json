@@ -8,13 +8,26 @@
         "spryker/oms": "^8.0.0",
         "spryker/sales": "^8.0.0"
     },
+    "require-dev": {
+        "spryker/code-sniffer": "*"
+    },
     "autoload": {
         "psr-4": {
-          "SprykerMiddleware\\": "src/SprykerMiddleware/"
+            "SprykerMiddleware\\": "src/SprykerMiddleware/"
         }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/spryker-middleware/process.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/spryker-middleware/logger.git"
+        }
+    ],
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
