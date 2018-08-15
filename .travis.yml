@@ -21,6 +21,7 @@ before_script:
 
 script:
 - sh -c "if [ '$DEFAULT' = '1' ]; then vendor/bin/codecept run; fi"
+- sh -c "if [ '$PHPCS' = '1' ]; then vendor/bin/phpmd src text vendor/spryker/architecture-sniffer/src/ruleset.xml --minimumpriority=2; fi"
 - sh -c "if [ '$PHPCS' = '1' ]; then composer cs-check ; fi"
 
 notifications:
