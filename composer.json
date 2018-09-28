@@ -1,7 +1,7 @@
 {
     "name": "spryker-middleware/oms-middleware-connector",
     "description": "OmsMiddlewareConnector module",
-    "license": "MIT",
+    "license": "proprietary",
     "require": {
         "php": ">=7.1",
         "spryker-middleware/process": "^1.0.0",
