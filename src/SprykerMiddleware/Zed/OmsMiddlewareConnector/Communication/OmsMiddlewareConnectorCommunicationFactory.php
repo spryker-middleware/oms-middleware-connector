@@ -16,6 +16,7 @@ use SprykerMiddleware\Zed\OmsMiddlewareConnector\OmsMiddlewareConnectorDependenc
 
 /**
  * @method \SprykerMiddleware\Zed\OmsMiddlewareConnector\OmsMiddlewareConnectorConfig getConfig()
+ * @method \SprykerMiddleware\Zed\OmsMiddlewareConnector\Business\OmsMiddlewareConnectorFacadeInterface getFacade()
  */
 class OmsMiddlewareConnectorCommunicationFactory extends AbstractCommunicationFactory
 {

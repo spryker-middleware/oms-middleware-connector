@@ -14,12 +14,15 @@ use SprykerMiddleware\Zed\Process\Dependency\Plugin\Stream\InputStreamPluginInte
 /**
  * @method \SprykerMiddleware\Zed\OmsMiddlewareConnector\Communication\OmsMiddlewareConnectorCommunicationFactory getFactory()
  * @method \SprykerMiddleware\Zed\OmsMiddlewareConnector\Business\OmsMiddlewareConnectorFacade getFacade()
+ * @method \SprykerMiddleware\Zed\OmsMiddlewareConnector\OmsMiddlewareConnectorConfig getConfig()
  */
 class OrderReadStreamPlugin extends AbstractPlugin implements InputStreamPluginInterface
 {
     protected const PLUGIN_NAME = 'OrderReadStreamPlugin';
 
     /**
+     * @api
+     *
      * @param string $path
      *
      * @return \SprykerMiddleware\Shared\Process\Stream\ReadStreamInterface
@@ -32,6 +35,8 @@ class OrderReadStreamPlugin extends AbstractPlugin implements InputStreamPluginI
     }
 
     /**
+     * @api
+     *
      * @return string
      */
     public function getName(): string

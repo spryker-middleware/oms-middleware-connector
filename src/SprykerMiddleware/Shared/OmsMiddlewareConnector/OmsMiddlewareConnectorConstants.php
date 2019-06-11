@@ -12,5 +12,5 @@ namespace SprykerMiddleware\Shared\OmsMiddlewareConnector;
  */
 class OmsMiddlewareConnectorConstants
 {
-    const ORDER_EXPORT_PROCESS_NAME = 'OMSMIDDLEWARECONNECTOR:ORDER_EXPORT_PROCESS_NAME';
+    public const ORDER_EXPORT_PROCESS_NAME = 'OMSMIDDLEWARECONNECTOR:ORDER_EXPORT_PROCESS_NAME';
 }

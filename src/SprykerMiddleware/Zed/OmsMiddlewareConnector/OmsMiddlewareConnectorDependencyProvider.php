@@ -14,8 +14,8 @@ use SprykerMiddleware\Zed\OmsMiddlewareConnector\Dependency\Facade\OmsMiddleware
 
 class OmsMiddlewareConnectorDependencyProvider extends AbstractBundleDependencyProvider
 {
-    const FACADE_PROCESS = 'FACADE_PROCESS';
-    const FACADE_SALES = 'FACADE_SALES';
+    public const FACADE_PROCESS = 'FACADE_PROCESS';
+    public const FACADE_SALES = 'FACADE_SALES';
 
     /**
      * @param \Spryker\Zed\Kernel\Container $container

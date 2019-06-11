@@ -58,6 +58,7 @@ class OrderReadStream implements ReadStreamInterface
     {
         $this->idSalesOrderList = explode(' ', $this->orderIdsString);
         $this->position = 0;
+
         return true;
     }
 
