@@ -1,38 +1,38 @@
 {
-    "name": "spryker-middleware/oms-middleware-connector",
-    "description": "OmsMiddlewareConnector module",
-    "license": "proprietary",
-    "require": {
-        "php": ">=7.1",
-        "spryker-middleware/process": "^1.0.0",
-        "spryker/oms": "^8.0.0",
-        "spryker/sales": "^8.0.0"
-    },
-    "require-dev": {
-        "spryker/calculation": "*",
-        "spryker/cart": "*",
-        "spryker/code-sniffer": "*",
-        "spryker/propel": "*",
-        "spryker/silex": "*",
-        "spryker/testify": "*",
-        "spryker/transfer": "*",
-        "spryker/architecture-sniffer": "*",
-        "phpmd/phpmd": "^2.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "SprykerMiddleware\\": "src/SprykerMiddleware/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "process-timeout": 600
-    },
-    "scripts": {
-        "cs-check": "phpcs --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml -v src/",
-        "cs-fix": "phpcbf --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml -v src/"
+  "name": "spryker-middleware/oms-middleware-connector",
+  "description": "OmsMiddlewareConnector module",
+  "license": "proprietary",
+  "require": {
+    "php": ">=7.1",
+    "spryker-middleware/process": "^1.0.0",
+    "spryker/oms": "^8.0.0 || ^10.0.0",
+    "spryker/sales": "^8.0.0 || ^10.0.0"
+  },
+  "require-dev": {
+    "spryker/calculation": "*",
+    "spryker/cart": "*",
+    "spryker/code-sniffer": "*",
+    "spryker/propel": "*",
+    "spryker/silex": "*",
+    "spryker/testify": "*",
+    "spryker/transfer": "*",
+    "spryker/architecture-sniffer": "*",
+    "phpmd/phpmd": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SprykerMiddleware\\": "src/SprykerMiddleware/"
     }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "process-timeout": 600
+  },
+  "scripts": {
+    "cs-check": "phpcs --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml -v src/",
+    "cs-fix": "phpcbf --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml -v src/"
+  }
 }
