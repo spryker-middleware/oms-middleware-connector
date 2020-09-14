@@ -37,10 +37,10 @@ class OmsMiddlewareConnectorDependencyProvider extends AbstractBundleDependencyP
      */
     protected function addProcessFacade($container): Container
     {
-        $container[self::FACADE_PROCESS] = function (Container $container) {
+        $container->set(static::FACADE_PROCESS, function (Container $container) {
             return new OmsMiddlewareConnectorToProcessFacadeBridge($container->getLocator()->process()->facade());
-        };
-
+        });
+        
         return $container;
     }
 
@@ -51,9 +51,9 @@ class OmsMiddlewareConnectorDependencyProvider extends AbstractBundleDependencyP
      */
     protected function addSalesFacade($container): Container
     {
-        $container[self::FACADE_SALES] = function (Container $container) {
+        $container->set(static::FACADE_SALES, function (Container $container) {
             return new OmsMiddlewareConnectorToSalesFacadeBridge($container->getLocator()->sales()->facade());
-        };
+        });
 
         return $container;
     }
