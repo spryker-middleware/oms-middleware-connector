@@ -3,7 +3,7 @@
     "description": "OmsMiddlewareConnector module",
     "license": "proprietary",
     "require": {
-        "php": ">=7.1",
+        "php": ">=7.2",
         "spryker-middleware/process": "^1.0.0",
         "spryker/oms": "^8.0.0 || ^10.0.0 || ^11.0.0",
         "spryker/sales": "^8.0.0 || ^10.0.0 || ^11.0.0"
@@ -30,6 +30,11 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "process-timeout": 600
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     },
     "scripts": {
         "cs-check": "phpcs --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml -v src/",
